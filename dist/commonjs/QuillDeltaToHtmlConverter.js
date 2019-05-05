@@ -118,7 +118,7 @@ var QuillDeltaToHtmlConverter = (function () {
             + funcs_html_1.makeEndTag(this._getListTag(firstItem.item.op));
     };
     QuillDeltaToHtmlConverter.prototype._renderListItem = function (li) {
-        li.item.op.attributes.indent = 0;
+        //li.item.op.attributes.indent = 0;
         var converter = new OpToHtmlConverter_1.OpToHtmlConverter(li.item.op, this.converterOptions);
         var parts = converter.getHtmlParts();
         var liElementsHtml = this._renderInlines(li.item.ops, false);
